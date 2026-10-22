@@ -17,7 +17,7 @@ import com.portafolio.SpringBoot.security.jwt.JwtProvider;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -76,8 +76,7 @@ public class AuthController {
         Set<Rol> roles = new HashSet<>();
         roles.add(rolService.getByRolNombre(RolNombre.ROLE_USER).get());
         
-        if(nuevoUsuario.getRoles().contains("admin"))
-            roles.add(rolService.getByRolNombre(RolNombre.ROLE_ADMIN).get());
+
         usuario.setRoles(roles);
         usuarioService.save(usuario);
         
