@@ -8,7 +8,7 @@ import com.portafolio.SpringBoot.security.Entity.Rol;
 import com.portafolio.SpringBoot.security.Repository.iRolRepository;
 import com.portafolio.SpringBoot.security.enums.RolNombre;
 import java.util.Optional;
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

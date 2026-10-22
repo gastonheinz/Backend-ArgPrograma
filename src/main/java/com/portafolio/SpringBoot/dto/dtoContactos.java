@@ -4,7 +4,7 @@
  */
 package com.portafolio.SpringBoot.dto;
 
-import com.sun.istack.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  *

@@ -9,7 +9,7 @@ import com.portafolio.SpringBoot.entity.Contactos;
 import com.portafolio.SpringBoot.repository.RContactos;
 import java.util.List;
 import java.util.Optional;
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
